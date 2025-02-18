@@ -829,11 +829,12 @@ a:hover {
 
 .img-fluid{
   height: 150px;
+  overflow:hidden;
 }
 
 img.img-fluid{
-  object-fit: fill;
-  width:100%
+  object-fit: cover;
+  width:100%;
 }
 
 /*======================================
