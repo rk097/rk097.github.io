@@ -115,3 +115,29 @@
 	});
 
 })(jQuery);
+
+function filterPortfolio(category) {
+	const allProjects = document.querySelectorAll('.work-box');
+	const buttons = document.querySelectorAll('.filter-btn');
+  
+	// Remove active class from all buttons
+	buttons.forEach(button => button.classList.remove('active'));
+  
+	// Add active class to the clicked button
+	const activeButton = Array.from(buttons).find(button => button.textContent.toLowerCase().includes(category.split('-')[1]));
+	if (activeButton) activeButton.classList.add('active');
+  
+	// Show/Hide projects based on the category
+	allProjects.forEach(project => {
+	  if (project.parentElement.classList.contains(category)) {
+		project.parentElement.style.display = 'block';
+	  } else {
+		project.parentElement.style.display = 'none';
+	  }
+	});
+  }
+  
+  // Set default filter to Fullstack
+  document.addEventListener('DOMContentLoaded', () => {
+	filterPortfolio('project-fullstack');
+  });
