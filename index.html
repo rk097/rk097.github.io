@@ -23,6 +23,23 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+    .work-box {
+      border-radius: 10px; /* Adjust the value for more or less rounding */
+      overflow: hidden; /* Ensures child elements like images respect the border radius */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better aesthetics */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    }
+    .work-box:hover {
+      transform: scale(1.05); /* Slightly enlarge the element */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+    }
+
+    .work-box .work-img img {
+      transition: none; /* Prevent the image from scaling */
+      transform: none;
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -80,17 +97,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skills</p>
-                  <span><b>Fullstack Dev</b></span>
-                  <span>HTML, CSS, Bootstrap, Tailwind, JS, nodeJS, Express, ejs, React, next-JS, Astro, Svelte, vercel, Railway, Flask, Firebase</span>
-                  <br><span><b>Software</b></span>
-                  <span>C++, Python, Java, git, GitHub, command line</span>
-                  <br><span><b>Hardware</b></span>
-                  <span>Arduino programming, breadboard, circuit design, circuit analysis</span>
-                  <br><span><b>Other</b></span>
-                  <span>DaVinci Resolve, Markdown</span>
-                </div>
               </div>
               <div class="col-md-6">
                 <div class="about-me pt-4 pt-md-0">
@@ -102,7 +108,7 @@
                   <p class="lead">
                     Hello! I'm a first year electrical engineering student at UCLA.
                     I have years of web and software development experience, and am looking to expand my knowledge in hardware.
-                    I'm currently working on a project in ASME to assemble the circuits for a quadraped robot, and I'm also working in several professional capacities as an active fullstack dev.
+                    I'm currently working on a project in ASME to assemble the circuits for a quadruped robot, and I'm also working in several professional capacities as an active fullstack dev.
                   </p>
                   <p class="lead">
                     Up until now, most of my skills I have learned on my own, and I'm excited to develop my skills in circuits and embedded systems!
