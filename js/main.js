@@ -137,7 +137,6 @@ function filterPortfolio(category) {
 	});
   }
   
-  // Set default filter to Fullstack
   document.addEventListener('DOMContentLoaded', () => {
-	filterPortfolio('project-fullstack');
+	filterPortfolio('project-hardware');
   });
